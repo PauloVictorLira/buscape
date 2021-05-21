@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Início - Buscapé</title>
+</head>
+
+<div class="backgroundSide">
+    <div class="dropdownMenu" id="dropdownMenu">
+        <div class="subtotal">
+            <p class="textoSubtotal" id="titulo">subtotal</p>            
+            <hr class="textoSubtotal" id="lineSubtotal">
+            <p class="textoSubtotal" id="parcelas">10x de R$ <span id="valorParcelas">0.00</span></p>
+            <p class="textoSubtotal" id="aVista">ou R$ <span id="valorAVista">0.00</span> à vista</p>
+        </div>
+    </div>
+</div>
+
+<body>
+    <header>
+        <img src="img/logo-buscape.png" alt="logo" id="logo">
+        <img src="img/menu.png" alt="menu" id="menu" onclick="openDropdownMenu()">
+    </header>
+    <main>
+
+        <div class="item" id="item1">
+            <div onclick="addCart(this.id)" class="addCartBtn" id="addCart0"></div>
+            <img src="img/tv.png" alt="tv" class="produto" id="tv">
+        </div>
+
+        <div class="item" id="item2">
+            <div onclick="addCart(this.id)" class="addCartBtn" id="addCart1"></div>
+            <img src="img/layout_0001_iphone.png" alt="smartphone" class="produto" id="smartphone">
+        </div>
+        
+    </main>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script type="text/javascript" src="script.js"></script>  
+
+</body>
+
+</html>

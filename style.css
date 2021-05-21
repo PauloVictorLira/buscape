@@ -1,0 +1,222 @@
+html {
+    background-color: #f2f2f2;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+header {
+    background-color: #ffcd00;
+    height: 103px;
+    position: fixed;
+    width: 100%;
+}
+
+#logo {    
+    height: 68%;
+    margin-top: 12px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.backgroundSide {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+}
+
+.dropdownMenu {
+    margin: 0;
+    padding: 0;
+    top: 103px;
+    height: auto;
+    width: 100%;
+    background-color: #daaf00;
+    position: fixed;
+    height: auto;
+    overflow: hidden;
+    z-index: 99;
+    transition: 0.3s;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.itemCartDel {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    width: 0;
+    color: black;
+    top: -76%;
+    left: 99%;
+    text-decoration: none;
+    z-index: 99;
+    font-weight: bold;
+}
+
+.itemCart {
+    background-color: #c49d00;
+    height: 58px;
+    padding: 13px 13px 13px 0px;
+    border: solid #daaf00 1px;
+}
+
+.imgProdutoCart {
+    width: 58px;
+}
+
+.tituloProdutoCart {
+    font-size: 11px;
+    margin-top: 0;
+    color: white;
+    position: relative;
+    left: 7%;
+    top: -64px;
+}
+
+.valorProdutoCart {
+    left: 7%;
+    position: relative;    
+    font-size: 12px;
+    top: -62px;
+}
+
+.subtotal {
+    text-align: right;
+    padding: 13px 13px;
+}
+
+p {
+    margin: 0 0 0 0;
+}
+
+.textoSubtotal {
+    margin: 8px 0 0 0;
+    font-size: 11px;
+}
+
+.textoSubtotal#titulo {
+    margin: 0;
+}
+
+hr#lineSubtotal {
+    border-top: 1px solid black;
+}
+
+main {
+    background-color: #f2f2f2;
+    top: 103px;
+    position: absolute;
+    z-index: -1;    
+    width: 100%;
+    padding-top: 33px;
+}
+
+#menu {
+    height: 33%;
+    margin-top: 33px;
+    margin-right: 16px;
+    float: right;
+    cursor: pointer;
+}
+
+.produto {
+    width: 100%;
+}
+
+.addCartBtn {
+    position: absolute;
+    margin-top: 20.2%;
+    right: 3.4%;
+    width: 22.3%;
+    height: 4%;
+    cursor: pointer;
+}
+
+#addCart0 {
+    margin-top: 24.8%;
+    right: 4%;
+}
+
+/* Smatphone */
+@media only screen and (max-width: 767px) {
+    header {
+        height: 60px;
+    }
+
+    #logo {    
+        height: 68%;
+        margin-top: 8px;
+        margin-left: 12px;
+    }
+    
+    #menu {
+        height: 33%;
+        margin-top: 20px;
+        margin-right: 15px;
+        float: right;
+    }
+
+    main {
+        top: 60px;
+        height: calc(100% - 60px - 33px);
+    }
+
+    .dropdownMenu {
+        top: 60px;    
+    }
+
+    .addCartBtn {
+        height: 2.3%;
+        margin-top: 20.5%;
+    }
+
+    .itemCartDel {
+        left: 96.5%;
+    }
+
+    .tituloProdutoCart, .valorProdutoCart {
+        left: 23.7%;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .tituloProdutoCart, .valorProdutoCart {
+        left: 11%;
+    }
+
+    .itemCartDel {
+        left: 98.4%;
+    }
+
+    .itemCart {
+        padding-left: 6px;
+    }
+
+    .addCartBtn {
+        height: 6%;
+    }
+
+    .textoSubtotal {
+        font-size: 14px;
+    }
+}
+  
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    .tituloProdutoCart, .valorProdutoCart {
+        left: 7%;
+        font-size: 13px;
+    }
+
+    .textoSubtotal {
+        font-size: 16px;
+    }
+}
